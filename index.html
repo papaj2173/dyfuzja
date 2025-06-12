@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Papież Jan Paweł II</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .rotating-image {
+      width: 300px;
+      height: 300px;
+      margin: 0 auto;
+      animation: spin 10s linear infinite;
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .rotating-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .caption {
+      margin-top: 20px;
+      font-size: 1.5em;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .video {
+      margin-top: 40px;
+    }
+
+    iframe {
+      width: 560px;
+      height: 315px;
+      max-width: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="rotating-image">
+    <img src="jp2.jpg" alt="Jan Paweł II">
+  </div>
+  <div class="caption">
+    Święty Jan Paweł II – Papież Polak
+  </div>
+
+  <div class="video">
+    <!-- Wstaw tutaj link do filmu z YouTube -->
+    <iframe src="https://youtu.be/If5X97CumxM?si=oC-K8BTfupiHQ0iR" allowfullscreen></iframe>
+  </div>
+</body>
+</html>
